@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #666292;
+}
+/* HEADER
+Je l'ai crée et utilise position fixe-------------------------------------------------------*/
+header {
+    background-color: #9B2C2C;
+    width: 100%;
+    height: 104px;
+    position: fixed;
+    top: 0;
+}
+.logo {
+    font-size: 50px;
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 2%;
+}
+
+span {
+    font-size: 20px;
+}
+
+/* le centre de premier page max 1200px, a ete creer par display grid -------------------------------------------*/
+.container {
+    max-width: 1200px;
+    text-align: center;
+    min-height: calc(100vh - 100px); 
+    margin-top: 11%;
+}
+/* min-height: calc(100vh - 104px); Pour "coller le footer------------------------------------------------ */
+.container>h2{
+    font-size: 40px;
+}
+.artistesPhoto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+/* Des tailles pour des images------------------------------------------------------------- */
+.card {
+    width: auto;
+    height: auto;
+}
+.card>img{
+    width: auto;
+    height: 100px;
+}
+ul {
+    list-style: none;
+}
+.main {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-top: 4%;
+}
+.bouttonConectione{
+    grid-column-start: 2;
+}
+input {
+    width: 375px;
+    height: 26px;
+    border-radius: 7px;
+    border: 0;
+}
+.cube {
+    background: rgb(18,101,177);
+    background: linear-gradient(72deg, rgba(18,101,177,1) 36%,
+    rgba(81,137,189,0.9976365546218487) 78%, rgba(123,184,241,1) 91%);
+    width: 266px;
+    height: 406px; 
+    margin-left: 10%;
+}
+.cube>h5 {
+    font-size: 18px;
+    color: white;
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif,;
+}
+.cube>ul {
+    color: white;
+    font-size: 29px;
+    color: white;
+    font-size: 29px;
+    text-align: initial;
+    padding-left: 12px;
+}
+.cube>ul>li {
+    margin: 5px 0px 7px 0px;
+}
+
+.cards-albums{
+    width: 154px;
+    height: auto;
+    border: 3px solid white;
+}
+.cards-albums>img {
+    width: auto;
+    height: 100px;
+}
+.halfOfPage {
+    grid-column-start: 1;
+}
+.halfOfPageCentre {
+    grid-column-start: 2;
+    margin-top: 6%;
+}
+.albums {
+    display: flex;
+}
+.cards-albums {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.barRecherche{
+    padding-top: 11%;
+}
+.bouttonConectione{
+    display: flex;
+    justify-content: center;
+    padding-top: 11%
+}
+.bouttonConectione>div {
+    width: 118px;
+    height: 39px;
+    background-color: #85AEFE;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+    border-radius: 10px;
+}
+.bouttonConectione>div>p {
+    margin-top: 11px;
+}
+/* Footer(evidement) -----------------------------------------------------------------*/
+footer {
+    width: 100%;
+    background-color: #110D0D;
+    height: 80px;
+    padding-top: 2%;
+}
+
+.ulfooter {
+    color: #BDADAD;
+    align-items: center;
+}
+.ulfooter>ul {
+    display: flex;
+    justify-content: space-around;
+}
+/* Le style pour 2m page------------------------------------------------------------ */
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* Des images -------------------------------------------------------------------- */
+.cardArtistes {
+    width: auto;
+    height: auto;
+}
+.cardArtistes>img {
+    width: auto;
+    height: 100px;
+}
+.cardClip{
+    width: auto;
+    height: 200px;
+}
+.cardClip>img {
+    width: auto;
+    height: 100px;
+}
+.cardBiographie{
+    height: 450px;
+    grid-template-columns: 3;
+}
+.biographieblock{
+    height: 330px;
+    width: 439px;
+}
+.biographieblock>img{
+    width: 25vw;
+    height: 39vh;
+}
+.mesArtistes {
+    grid-column-start: 1;
+}
+.cardClip{
+    grid-column-start: 2;
+}
+/*Ici, je commances créer des Media Queries */
