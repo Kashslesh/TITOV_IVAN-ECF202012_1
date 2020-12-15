@@ -40,15 +40,17 @@ span {
 .artistesPhoto{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1vw;
 }
 /* Des tailles pour des images------------------------------------------------------------- */
 .card {
     width: auto;
     height: auto;
+    margin: 0 1vw;
 }
 .card>img{
-    width: auto;
-    height: 100px;
+    width: 100%;
+    height: 100%;
 }
 ul {
     list-style: none;
@@ -58,12 +60,9 @@ ul {
     grid-template-columns: 25% 75%;
     margin-top: 4%;
 }
-.bouttonConectione{
-    grid-column-start: 2;
-}
 input {
-    width: 375px;
-    height: 26px;
+    width: 27vw;
+    height: 3vw;
     border-radius: 7px;
     border: 0;
 }
@@ -71,8 +70,8 @@ input {
     background: rgb(18,101,177);
     background: linear-gradient(72deg, rgba(18,101,177,1) 36%,
     rgba(81,137,189,0.9976365546218487) 78%, rgba(123,184,241,1) 91%);
-    width: 266px;
-    height: 406px; 
+    width: 20vw;
+    height: 41vh; 
     margin-left: 10%;
 }
 .cube>h5 {
@@ -96,23 +95,26 @@ input {
 }
 
 .cards-albums{
-    width: 154px;
+    width: auto;
     height: auto;
     border: 3px solid white;
 }
 .cards-albums>img {
-    width: auto;
-    height: 100px;
+    width: 100%;
+    height: 100%;
 }
+
 .halfOfPage {
     grid-column-start: 1;
 }
 .halfOfPageCentre {
     grid-column-start: 2;
     margin-top: 6%;
+    margin-bottom: 2%;
 }
 .albums {
     display: flex;
+    margin-left: 3%;
 }
 .cards-albums {
     margin-left: 8px;
@@ -124,11 +126,12 @@ input {
 .bouttonConectione{
     display: flex;
     justify-content: center;
-    padding-top: 11%
+    padding-top: 11%;
+    grid-column-start: 2;
 }
 .bouttonConectione>div {
-    width: 118px;
-    height: 39px;
+    width: 10vw;
+    height: 4vh;
     background-color: #85AEFE;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -168,28 +171,34 @@ footer {
     height: auto;
 }
 .cardArtistes>img {
-    width: auto;
-    height: 100px;
+    width: 80%;
+    height: 100%;
 }
 .cardClip{
-    width: auto;
-    height: 200px;
+    width: 100%;
+    height: 9vh;
+    margin: 10% 0 10% 0;
+    border: 2px solid white;
 }
 .cardClip>img {
-    width: auto;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+}
+.clips>h4 {
+    padding-bottom: 16%;
 }
 .cardBiographie{
-    height: 450px;
+    height: 70vh;
     grid-template-columns: 3;
 }
 .biographieblock{
-    height: 330px;
-    width: 439px;
+    height: 39vh;
+    width: 37vw;
 }
 .biographieblock>img{
     width: 25vw;
     height: 39vh;
+    border-radius: 5px;
 }
 .mesArtistes {
     grid-column-start: 1;
@@ -197,4 +206,402 @@ footer {
 .cardClip{
     grid-column-start: 2;
 }
-/*Ici, je commances créer des Media Queries */
+h4 {
+    font-size: 35px;
+    font-weight: normal;
+}
+.textbiographie {
+    background-color: white;
+    width: 25vw;
+    height: 11vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+.prochainConcerts{
+    background-color: #4D9541;
+    color: #C7C3C3;
+    width: 25vw;
+    height: 11vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+/*Ici, je commance créer des Media Queries */
+@media (min-width: 1201px) and (max-width: 1300px){
+    .container {
+        min-width: 1200px;
+        text-align: center;
+    }
+    .wrapper{
+        min-width: 1200px;
+    }
+    .barRecherche {
+        padding-top: 5%;
+    }
+    input {
+        width: 28vw;
+        height: 4vh;
+        border-radius: 7px;
+        border: 0;
+    }
+    .albums {
+        margin-left: 0;
+    }
+}
+@media (min-width: 1301px) and (max-width: 1399px) {
+    .container {
+        min-width: 1300px;
+        text-align: center;
+    }
+    .wrapper{
+        min-width: 1300px;
+    }
+    .barRecherche {
+        padding-top: 5%;
+    }
+    input {
+        width: 28vw;
+        height: 4vh;
+        border-radius: 7px;
+        border: 0;
+    }
+}
+@media (min-width: 1401px) and (max-width: 1499px) {
+    .container {
+        min-width: 1400px;
+        text-align: center;
+    }
+    .wrapper{
+        min-width: 1400px;
+    }
+    .barRecherche {
+        padding-top: 5%;
+    }
+    input {
+        width: 28vw;
+        height: 4vh;
+        border-radius: 7px;
+        border: 0;
+    }
+    .bouttonConectione {
+        padding-top: 10%;
+    }
+    .albums {
+        margin-left: 0;
+    }
+}
+@media (min-width: 1501px) and (max-width: 1599px) {
+    .container {
+        min-width: 1500px;
+        text-align: center;
+    }
+    .wrapper{
+        min-width: 1500px;
+    }
+    .barRecherche {
+        padding-top: 5%;
+    }
+    input {
+        width: 28vw;
+        height: 4vh;
+        border-radius: 7px;
+        border: 0;
+    }
+    .bouttonConectione {
+        padding-top: 10%;
+    }
+    .albums {
+        margin-left: 0;
+    }
+    .textbiographie {
+        font-size: 20px;
+    }
+    .prochainConcerts{
+        font-size: 20px;
+    }
+}
+@media (min-width: 1601px) and (max-width: 1699px) {
+    .container {
+        min-width: 1600px;
+        text-align: center;
+    }
+    .wrapper{
+        min-width: 1600px;
+    }
+    .barRecherche {
+        padding-top: 5%;
+    }
+    input {
+        width: 28vw;
+        height: 4vh;
+        border-radius: 7px;
+        border: 0;
+    }
+    .bouttonConectione {
+        padding-top: 8%;
+    }
+    .albums {
+        margin-left: 0;
+    }
+    .textbiographie {
+        font-size: 22px;
+    }
+    .prochainConcerts{
+        font-size: 22px;
+    }
+}
+@media (min-width: 1701px) and (max-width: 1799px) {
+    .container {
+        min-width: 1700px;
+        text-align: center;
+    }
+    .wrapper{
+        min-width: 1700px;
+    }
+    .barRecherche {
+        padding-top: 5%;
+    }
+    input {
+        width: 28vw;
+        height: 4vh;
+        border-radius: 7px;
+        border: 0;
+    }
+    .bouttonConectione {
+        padding-top: 8%;
+    }
+    .albums {
+        margin-left: 0;
+    }
+    .cube {
+        background: rgb(18,101,177);
+        background: linear-gradient(72deg, rgba(18,101,177,1) 36%, rgba(81,137,189,0.9976365546218487) 78%, rgba(123,184,241,1) 91%);
+        width: 17vw;
+        height: 40vh;
+        margin-left: 8%;
+    }
+    .textbiographie {
+        font-size: 22px;
+    }
+    .prochainConcerts{
+        font-size: 22px;
+    }
+}
+@media (min-width: 1801px) and (max-width: 1899px) {
+    .container {
+        min-width: 1800px;
+        text-align: center;
+    }
+    .wrapper{
+        min-width: 1800px;
+    }
+    .barRecherche {
+        padding-top: 5%;
+    }
+    input {
+        width: 28vw;
+        height: 4vh;
+        border-radius: 7px;
+        border: 0;
+    }
+    .bouttonConectione {
+        padding-top: 10%;
+    }
+    .albums {
+        margin-left: 0;
+    }
+    .cube {
+        background: rgb(18,101,177);
+        background: linear-gradient(72deg, rgba(18,101,177,1) 36%, rgba(81,137,189,0.9976365546218487) 78%, rgba(123,184,241,1) 91%);
+        width: 17vw;
+        height: 40vh;
+        margin-left: 8%;
+    }
+    .textbiographie {
+        font-size: 23px;
+    }
+    .prochainConcerts{
+        font-size: 23px;
+    }
+}
+@media (min-width: 1901px) and (max-width: 1999px) {
+    .container {
+        min-width: 1900px;
+        text-align: center;
+    }
+    .wrapper{
+        min-width: 1900px;
+    }
+    .barRecherche {
+        padding-top: 5%;
+    }
+    input {
+        width: 28vw;
+        height: 4vh;
+        border-radius: 7px;
+        border: 0;
+    }
+    .bouttonConectione {
+        padding-top: 8%;
+    }
+    .bouttonConectione>div>p{
+        font-size: 20px;
+    }
+    .albums {
+        margin-left: 0;
+    }
+    .cube {
+        background: rgb(18,101,177);
+        background: linear-gradient(72deg, rgba(18,101,177,1) 36%, rgba(81,137,189,0.9976365546218487) 78%, rgba(123,184,241,1) 91%);
+        width: 17vw;
+        height: 40vh;
+        margin-left: 10%;
+    }
+    .textbiographie {
+        font-size: 23px;
+    }
+    .prochainConcerts{
+        font-size: 23px;
+    }
+}
+/* Media Queries pour des  mobiles --------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991px)  {
+    .cube>ul {
+        color: white;
+        font-size: 29px;
+        color: white;
+        font-size: 20px;
+        text-align: initial;
+        padding-left: 12px;
+    }
+    .cube>h5 {
+        font-size: 15px;
+        color: white;
+        padding-top: 10px;
+        text-align: left;
+        padding-left: 10px;
+        font-family: 'Roboto', sans-serif,;
+    }
+    .bouttonConectione>div>p {
+        font-size: 11px;
+    }
+    .container>h2 {
+        font-size: 34px;
+    }
+
+}
+@media (max-width: 767px) {
+    .artistesPhoto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 1vw;
+        grid-row-gap: 1vh;
+    }
+    .card {
+        width: auto;
+        height: auto;
+        margin: 0 1vw;
+    }
+    .bouttonConectione>div>p {
+        font-size: 11px;
+    }
+    .container>h2 {
+        font-size: 34px;
+    }
+    .container{
+        margin-top: 19%;
+    }
+    .cube>ul {
+        font-size: 9px;
+    }
+    .cube>h5 {
+        font-size: 9px;
+    }
+    .logo {
+        font-size: 25px;
+    }
+    header {
+        height: 60px;
+    }
+    .container>h2 {
+        font-size: 30px;
+    }
+    .albums {
+        display: block;
+    }
+    .cards-albums {
+        margin-left: 0;
+        margin-right: 3vw;
+        width: auto;
+        height: auto;
+        border: 3px solid white;
+        margin-bottom: 10px;
+
+    }
+    .cube {
+        width: 23vw;
+        height: 41vh;
+    }
+    input {
+        width: 50vw;
+        height: 5vw;
+    }
+    .bouttonConectione>div {
+        width: 13vw;
+    }
+    .bouttonConectione>div>p {
+        font-size: 7px;
+    }
+    .ulfooter>ul {
+        display: block;
+        justify-content: center;
+        font-size: 10px;
+    }
+    .ulfooter {
+        display: flex;
+        justify-content: center;
+    }
+    /* pour 2em page -------------------------------------------------------------------*/
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cardClip {
+        width: 100vw;
+        height: 50vh;   
+    }
+    .textbiographie {
+        width: 50%;
+        height: 15%;
+
+    }
+    .biographieblock {
+        height: auto;
+        width: auto;
+    }
+    .biographieblock>img {
+        width: 100%;
+        height: 100%;
+    }
+    h4 {
+        font-size: 30px;
+    } 
+    .biographieblock {
+        height: 50%;
+        width: 66%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .prochainConcerts {
+        width: 50%;
+        height: 15%;
+    }
+    .clips>h4 {
+        padding-bottom: 0%;
+    }  
+    .cardBiographie {
+        height: 123vh;
+    }
+}
