@@ -144,6 +144,29 @@ input {
 .bouttonConectione>div>p {
     margin-top: 11px;
 }
+/* je cree des liens -------------------------------------------------------  */
+
+.container>h2>a {
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+/* zoom des divs----------------------------------------------------------------- */
+.card:hover{
+    transform: scale(2);
+    transition: transform .20s;
+    z-index: 1;
+}
+.cards-albums:hover {
+    transform: scale(1.8);
+    transition: transform .20s;
+
+}
+
+
+
 /* Footer(evidement) -----------------------------------------------------------------*/
 footer {
     width: 100%;
@@ -213,7 +236,7 @@ h4 {
 .textbiographie {
     background-color: white;
     width: 25vw;
-    height: 11vh;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     font-size: 15px;
@@ -222,10 +245,22 @@ h4 {
     background-color: #4D9541;
     color: #C7C3C3;
     width: 25vw;
-    height: 11vh;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     font-size: 15px;
+}
+/* zoom pour page 2 ----------------------------------------------------------------- */
+.cardClip:hover{
+    transform: scaleY(3);
+    transition: transform .20s;
+    z-index: 1;
+}
+.biographieblock>img:hover {
+    transform: scale(2);
+    height: 100%;
+    transition: transform .20s;
+    z-index: 1;
 }
 /*Ici, je commance créer des Media Queries */
 @media (min-width: 1201px) and (max-width: 1300px){
@@ -563,6 +598,17 @@ h4 {
         display: flex;
         justify-content: center;
     }
+    /* -----------J'entends du zoom----------------------------- */
+    .card:hover{
+        transform: none;
+        transition: none;
+        z-index: 0;
+    }
+    .cards-albums:hover {
+        transform: none;
+        transition: none;
+    
+    }
     /* pour 2em page -------------------------------------------------------------------*/
     .wrapper {
         display: grid;
@@ -604,4 +650,16 @@ h4 {
     .cardBiographie {
         height: 123vh;
     }
+    /* -----------J'entends du zoom----------------------------- */
+    .cardClip:hover{
+        transform: none;
+        transition: none;
+        z-index: 0;
+    }
+    .cardBiographie:hover {
+        transform: none;
+        transition: none;
+        
+    }
+
 }
