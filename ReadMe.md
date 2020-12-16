@@ -1,7 +1,3 @@
-On peut entree dans 2m page par "click" sur Les Artistes.
+Lien de la maquette Figma :https://www.figma.com/file/JnEmBgP82hHDmXctZQcN0m/Untitled?node-id=0%3A1
 
-
-
-
-
-Pour revenir "click" sur logo "My music"
+Page 1
