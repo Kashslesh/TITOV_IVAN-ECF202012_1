@@ -620,7 +620,7 @@ h4 {
     }
     .textbiographie {
         width: 50%;
-        height: 15%;
+        height: auto;
 
     }
     .biographieblock {
@@ -641,8 +641,8 @@ h4 {
         margin-right: auto;
     }
     .prochainConcerts {
-        width: 50%;
-        height: 15%;
+        width: 52%;
+        height: auto;
     }
     .clips>h4 {
         padding-bottom: 0%;
